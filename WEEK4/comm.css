@@ -1,0 +1,13 @@
+.one {
+    position: relative;
+    text-align: center;
+   color:yellow;
+}
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  font-weight: bold;
+font-size: 65px;
+ font-style: serif;
+}

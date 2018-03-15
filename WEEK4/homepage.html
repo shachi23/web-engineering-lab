@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+  <title>SB academy</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body>
+
+<header>
+<img id="head1"  src="ft.jpg" width="50" height="90">
+<h2 id="head">Test series</h2>
+<h2 id="head">Free videos</h2>
+<h2 id="head">My account</h2>
+  </header>
+
+ <div class="one">
+  <img src="5.jpeg"  style="width:100%;">
+  <div class="centered">Welcome to school </br> of e-Learning.</div>
+</div> 
+
+<h3 id="sa">Welcome to SB academy.</h3>
+<h2 id="ty">Take your classroom, wherever you go...</h2>
+
+<div class="slideshow" style="max-width:650px">
+  <img class="mySlides" src="1.jpeg" width="650" height="150">
+  <img class="mySlides" src="2.jpg" width="650" height="150">
+  <img class="mySlides" src="3.jpeg" width="650" height="150">
+  <img class="mySlides" src="4.jpg" width="650" height="150">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+<div id="noti">
+<h4>Don't miss any video, Subscribe to get instant notification</h4>
+<button class="button">Subscribe</button>
+</div>
+<div class="di1">
+<h3>UPSC-IAS</h3>
+<p>Watch Videos on various issues and get to  know about different aspects of World's toughest exam</p>
+</div>
+
+<div class="di2">
+<h3>Bank Exams</h3>
+<p>Be a banker and play with money all the time. Watch videos, those will surely help you to secure your dream Bank job.</p>
+</div>
+
+<div class="di3">
+<h3>SSC Exams</h3>
+<p>Watch and crack India's most popular govt. job exam. Learn shortcuts and tricks from Top-Notch faculties of India.</p>
+</div>
+
+<div class="di4">
+<h3>Law Exams</h3>
+<p>Whether it is CLAT or AILET or LSAT,We've got them all covered. Watch videos related to various Laws or popular cases in India.</p>
+</div>
+
+<h2 id="exam">Know your exams</h2>
+
+<div class="di01">
+<h4>course</h4>
+ <a href="upsc.html">UPSC</a> 
+<p>Union Public Service </br>Commision (UPSC)</p>
+</div>
+
+<div class="di02">
+<h4>course</h4>
+<a href="bank.html">BANK EXAMS</a> 
+<p>IBPS - PO/Clerk, SBI- </br>PO/Clerk, RRB- PO/Clerk</p>
+</div>
+
+<div class="di03">
+<h4>course</h4>
+<a href="ssc.html">SSC EXAM</a> 
+<p>Staff Selection Commission</br>(SSC)</p>
+</div>
+
+<div class="di04">
+<h4>course</h4>
+<a href="clat.html">CLAT</a> 
+<p>Common Law Admission</br> Test(CLAT)</p>
+</div>
+<div id="noti">
+<button class="button" id="ab">view all courses</button>
+</div>
+<div id="noti">
+<h3 style="color:red">WHO WE ARE</h3>
+<h1 style="text-decoration: underline overline;">We are India's Biggest E-Learning Platform</h1>
+<p style="color:green">SB academy is India's biggest E-Learning platform specialised in providing a Hi-tech course for the different government exams. SB academy was the first to introduce the concept of offline coaching through its Pendrive courses which was very innovative step towards the E-learning education and now it has become very popular and huge in demand among the students preparing for the different government exams. More than 2 lakh students have been associated with a different course of SB academy and have been successfully placed in the different job position in the government sector.</p>
+</div>
+<div id="noti">
+<h2 style="color:red">WHY US?</h2>
+<h1 style="text-decoration: underline overline;">Exchanging Notes no more a Hassle</h1>
+<p style="color:blue">We are the one who introduced the concept of Pendrive coaching so that you can prepare for Government job exam at the ease of your home comfort by watching our video made by the top-notch faculties of India, you can learn at any time and from anywhere without wasting your precious time. We made the exam preparation easier with our courses and changed the concept of learning to E-learning.</p>
+</div>
+<div>
+<ul>
+<li>Tough </br> made easy</li>
+<li>Switch </br> to smart</li>
+<li>Revolutionary</br>learning Initiative</li>
+<li>Learn at</br>Your Own Pace</li>
+<li>To Forge a Better</br>Understanding</li>
+</ul>
+</div>
+
+ <footer>
+<img id="foot"  src="ft.jpg" width="200" height="200">
+
+  <h2 id="foot">Contact info:</br>New Delhi India </br>+91 9876543210</br>abc.123@sbacademy.com</h2>
+ 
+</footer> 
+</body>
+</html> 
