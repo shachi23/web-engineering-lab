@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up form</title>
+
+<style>
+body{
+font-weight:bold;
+}
+.but{
+font-weight:bold;
+color:green;
+}
+</style>
+</head>
+<body>
+<h2 style="text-align:center ; color:red">SIGN <span style="color:blue">UP!!!</span></h2>
+<hr>
+
+<form name="myForm" onsubmit="return validateForm()" >
+  First name:<br>
+  <input type="text" name="firstname" required>
+  <br><br>
+  Last name:<br>
+  <input type="text" name="lastname" required>
+<br><br>
+  Gender:<br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br><br>
+Mobile no:<br>
+<input type="text" name="mobile" ><br><br>
+Email-id:<br>
+<input type="text" name="email"><br><br>
+password:<br>
+<input type="password" name="password" id="psw"><br><br>
+<input class="but" type="submit" value="Submit">
+</form>
+</body>
+
+<script>
+function validateForm() {
+var str = document.forms["myForm"]["mobile"].value;
+if(str.length==10){
+    if (!(str.match(/(7|8|9)\d{9}/))) {
+        alert("Invalid mobile number"); 
+       return false;
+    }
+}
+else
+alert("Mobile Number should be 10 digit");
+
+var stre = document.forms["myForm"]["email"].value;
+if (!(stre.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))) {
+        alert("Invalid email-id"); 
+       return false;
+    }
+
+
+var strp = document.getElementById("psw").value;
+if(strp.length>5){
+if (!(strp.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/))) {
+        alert("Password must contain\none uppercase\none lowercase\none number"); 
+       return false;
+    }
+}
+else
+alert("password must be atleast 6 character long");
+
+
+
+}
+</script>
+</html>
